@@ -2,8 +2,9 @@
 
 Repo for ADiP Group 7
 
-Mitglieder:
-Lasse
+**Mitglieder:**
+
+- Lasse
 
 __Uebung 1:__
 
