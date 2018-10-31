@@ -1,1 +1,0 @@
-int Primzahl(int);
