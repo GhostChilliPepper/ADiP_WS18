@@ -18,16 +18,20 @@ long fib_rec(long n){
     }
 }
 
-int main(int argc, char *argv[]){
-    long n;
+int main(int argc, char *argv[]) {
+    int i = 1;
     long fib;
+    long n = 0;
 
-    printf("\nWelche Fibonacci-Zahl soll berechnet werden? ");
-    scanf("%li",&n);
+    printf("\n");
 
-    fib = fib_rec(n);
-    if(n > 0) {
-        printf("Die %li. Fibonacci-Zahl ist %li\n\n", n, fib);
+    while(i <= 50) {
+        fib = fib_rec(n);
+        if(fib % 2 == 0 && fib != 0) {
+            printf("%i. Die %li. Fibonacci-Zahl ist %li\n", i, n, fib);
+            i++;
+        }
+        n++;
     }
     return 0;
 }
