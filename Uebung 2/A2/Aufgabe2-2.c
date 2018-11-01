@@ -23,8 +23,6 @@ int main(int argc, char *argv[]) {
     long fib;
     long n = 0;
 
-    printf("\n");
-
     while(i <= 50) {
         fib = fib_rec(n);
         if(fib % 2 == 0 && fib != 0) {
