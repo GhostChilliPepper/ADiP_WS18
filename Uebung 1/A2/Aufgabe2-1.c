@@ -1,18 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
- int main (int argc , char ** argv ) {
-int n=0;
-int s=0;
-int z=1;
-   printf("Geben Sie n ein...");
-   scanf("%i",&n);
-   
-    while ((z<n+1)){
-    s=s+z;
-    z++;
-    }
-    printf("Die Summe der Zahlen 1 bis n ergeben aufadiert %i \n",s);
- 
-    return 0;
- }
 
+int main(void)
+{
+    int i; /* integer varianle (whole number) */
+    printf("Bitte geben Sie eine positive ganze Zahl ein: ");
+    scanf("%d",&i); /* Eingabefunktion. */
+    printf("\nDie Summe aller ganzen Zahlen 0 bis %d ist %d.\n",i, i*(i+1)/2); /* Gaußsche Summenformel */
+    return 0;
+}
