@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-long fib_rec(long n){
+long fib_rec(long n) {
 
     if(n >= 2) {
         return fib_rec(n-1) + fib_rec(n-2);
