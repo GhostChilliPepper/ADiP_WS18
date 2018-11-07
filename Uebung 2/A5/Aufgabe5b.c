@@ -10,11 +10,10 @@ int exponent(double a, int n) {
     double ergebniss = a;
     if (n==0) {
         ergebniss = 1;
-    } else if (n > 1) {
-        for (int i = 1; i < n; i++) {
-            ergebniss = ergebniss * a;
-            count++;
-        }
+    } else if (n%2==0) {
+
+    } else if (n%2!=0) {
+
     }
     return ergebniss;
 }
@@ -23,7 +22,7 @@ int main(void) {
     double z;
     int e;
     printf("Geben sie eine Zahl an: ");
-    scanf("%le", &z);
+    scanf("%i", &z);
     printf("Geben sie einen Exponenten an: ");
     scanf("%i", &e);
     printf("Ergebniss: %i\n", exponent(z, e));
