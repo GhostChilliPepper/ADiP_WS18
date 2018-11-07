@@ -25,9 +25,8 @@ int exponential(double a, int n) {
         ergebniss = 1;
     } else if (n%2==0) {
         ergebniss = exponent(a, n/2) * exponent(a, n/2);
-        count++;
     } else if (n%2!=0) {
-        ergebniss = a * exponent(a, (n-1)/2) * exponent(a, (n-1)/2)
+        ergebniss = a * exponent(a, (n-1)/2) * exponent(a, (n-1)/2);
     }
     return ergebniss;
 }
