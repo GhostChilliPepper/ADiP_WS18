@@ -15,21 +15,20 @@
 
 
 int main(void) {
+    int Zahl=0;
    int Zahl1=0;
    int Zahl2=0;
    int Kontrolle1=0;
    int Kontrolle2=0;
 
     printf("\n \n \nDieses Programm konvertiert eine Zahl zwischen 20 und 69 in Text. \n ... \n ... \n ... \n");
+    printf("Geben Sie eine passende Zahl ein... \n");
+    scanf("%i", & Zahl);
+    printf("...\n");
 
-    printf("Geben sie die erste Ziffer ein... \n");
-    scanf("%i",& Zahl1);
+    Zahl2=Zahl%10;
+    Zahl1=(Zahl-Zahl2)/10;
 
-    printf("Geben sie die zweite Ziffer ein... \n");
-    scanf("%i",& Zahl2);
-
-    printf("Zu konvertierende Zahl: %i", Zahl1);
-    printf("%i \n \n \n ... \n ... \n ... \n \n", Zahl2);
 
 
     // Ausgabe des zweiten Zeichens in Text Form
