@@ -21,7 +21,7 @@ int main(void)
         printf("Bitte geben sie eine Zahl zwischen 20 und 69 ein: ");
         check = scanf("%d", &pre_input);
         if(check != 1) {
-            printf("Blitch ist dumm\n");
+            printf("Das ist keine Zahl!\n");
         }
         if(pre_input < 20) {
             printf("ERROR, die Zahl liegt nicht zwischen 20 und 69.\n");
