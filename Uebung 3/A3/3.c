@@ -22,13 +22,12 @@ int main(void)
         check = scanf("%d", &pre_input);
         if(check != 1) {
             printf("Das ist keine Zahl!\n");
+            braek;
         }
         if(pre_input < 20) {
             printf("ERROR, die Zahl liegt nicht zwischen 20 und 69.\n");
-            break;
         } else if (pre_input > 69) {
             printf("ERROR, die Zahl liegt nicht zwischen 20 und 69.\n");
-            break;
         } else {
             achtung = 4;
         }
