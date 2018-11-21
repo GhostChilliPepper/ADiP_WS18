@@ -3,7 +3,7 @@
  * Date: 16.11.2018                             *
  * Description: Rekursiv                        *
  * File: 2iterativ.c                            *
- * Compile: gcc -o 2i -Wall 2iterativ.c         *
+ * Compile: gcc -o 2i -Wall 2.c                 *
  \**********************************************/ 
 
 #include<stdio.h>
@@ -48,7 +48,7 @@ int succ(int x)
 
 
 /*
- * Description: Gibt den VorgÃ¤nger des übergebenen Wertes zurück
+ * Description: Gibt den Vorgänger des übergebenen Wertes zurück
  * Input: Integer
  *Output: Integer
  */
