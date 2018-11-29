@@ -17,11 +17,11 @@ int main() {
     printf("a:");
     if (scanf("%lf", &a) != 1) { goto error; }
     printf("b:");
-    scanf("%lf", &b);
+    if (scanf("%lf", &b) != 1) { goto error; }
     printf("c:");
-    scanf("%lf", &c);
+    if (scanf("%lf", &c) != 1) { goto error; }
     printf("d:");
-    scanf("%lf", &d);
+    if (scanf("%lf", &d) != 1) { goto error; }
     printf("=INIT===========================================================\n");
     printf("a: %lf, b: %lf, c: %lf, d: %lf\n",a,b,c,d);
     printf("=EVALUATE=======================================================\n");
@@ -44,10 +44,8 @@ int main() {
     return 0;
     error:
     printf("=ERROR==========================================================\n");
-    printf("Someting went wrong! Please try again\n");
-    printf("Press any key\n");
-    char e;
-    scanf("%c", &e);
+    printf("Someting went wrong! Please try again.\n");
+    getchar();
     printf("================================================================\n");
     goto start;
     //return 1;
