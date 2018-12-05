@@ -11,17 +11,26 @@ double max(double a,double b,double c,double d);
 int monotone(double a,double b,double c,double d);
 double derivation(double a,double b,double c,double d,double x);
 
+void clearBuffer() {
+    char c;
+    while ((c = getchar()) != '\n' && c != EOF) { }
+}
+
 int main() {
     double a, b, c, d, x;
     start:
     printf("a:");
     if (scanf("%lf", &a) != 1) { goto error; }
+    clearBuffer();
     printf("b:");
     if (scanf("%lf", &b) != 1) { goto error; }
+    clearBuffer();
     printf("c:");
     if (scanf("%lf", &c) != 1) { goto error; }
+    clearBuffer();
     printf("d:");
     if (scanf("%lf", &d) != 1) { goto error; }
+    clearBuffer();
     printf("=INIT===========================================================\n");
     printf("a: %lf, b: %lf, c: %lf, d: %lf\n",a,b,c,d);
     printf("=EVALUATE=======================================================\n");
@@ -45,7 +54,7 @@ int main() {
     error:
     printf("=ERROR==========================================================\n");
     printf("Someting went wrong! Please try again.\n");
-    getchar();
+    clearBuffer();
     printf("================================================================\n");
     goto start;
     //return 1;
