@@ -17,6 +17,7 @@ A3) Primzahl
 
 __Terminal quickcompile-script:__
 
+Ubuntu:
 1. edit bashrc file (terminal startup script)
  
     `vim ~/.bashrc` 
