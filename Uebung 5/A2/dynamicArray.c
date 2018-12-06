@@ -79,14 +79,14 @@ int main() {
  * Vorteil: Weniger Laufzeit.
  * Nachteil: reserviert unnötig Speicher.
  */
-DynArray newDynArray(int size) { // wie ein constructor
+DynArray newDynArray(int size_max) { // wie ein constructor
     DynArray output;
 
-    output.size_max = size;
+    output.size_max = size_max;
     output.size = 0;
 
     int *array;
-    array = (int *)malloc(size * sizeof(int)); // Speicher reservieren (es wird für 'size' int Objekte Speicher reserviert)
+    array = (int *)malloc(size_max * sizeof(int)); // Speicher reservieren (es wird für 'size' int Objekte Speicher reserviert)
     output.content = array;
     return output;
 }

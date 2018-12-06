@@ -13,7 +13,7 @@ int main() {
     printf("Enter String: ");
     fgets(string, 100, stdin);
     printf("%s \n", turn(string));
-    printf("Palindrome? %s\n", isPalindrome(string) == 1 ? "True" : "False");
+    printf("Palindrome? %s\n", isPalindrome(string) ? "True" : "False");
     return 0;
 }
 
