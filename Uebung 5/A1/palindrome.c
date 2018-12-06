@@ -19,7 +19,8 @@ int main() {
 
 char *turn(char output[]) {
     char tmp;
-    for (int i = 0; i <= (strlen(output)/2)-2; i++) {
+    for (int i = 0; i < (strlen(output)/2)-1; i++) { // Wird so oft wiederholt, bis die Zähl-Variable die hälfte der Stringlänge erreicht (hälft, weil immer 2 chars getauscht werden). -1 am Ende, damit \n nicht mitgetauscht wird.
+        // tauschen
         tmp = output[i];
         output[i] = output[strlen(output)-2-i];
         output[strlen(output)-2-i] = tmp;
@@ -29,7 +30,7 @@ char *turn(char output[]) {
 
 int isPalindrome(char *input) {
     char str[100];
-    strcpy(str, input);
+    strcpy(str, input); // string muss kopiert werden, weil man sonst den poniter vergleicht.
 
     if (strcmp(input, turn(str)) == 0) {
         return 1;
