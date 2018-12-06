@@ -12,11 +12,13 @@ typedef struct {
     int size_max;
 } DynArray;
 
+/*
 typedef struct {
     int *content;
     int size;
     int size_max;
 } DynArrayMin;
+*/
 
 DynArray newDynArray(int size);
 void dyn_array_add(DynArray *array, int value);
