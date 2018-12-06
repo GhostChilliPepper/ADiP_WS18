@@ -58,7 +58,7 @@ int main() {
         goto setup_error;
     }
     dyn_array_print(&test);
-    printf("=========================================\n");
+    printf("================================================================\n");
     goto start;
     //return 0;
     error:
