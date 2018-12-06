@@ -30,7 +30,8 @@ Ubuntu:
          gcc "$@" -o tmp.out && ./tmp.out && rm ./tmp.out
     }
      ```
+3. save bashrc script and restart terminal
      
-3. compile and execute c file with the folloing command in the terminal
+4. compile and execute c file with the folloing command in the terminal
 
     `crun <path to file.c>`
