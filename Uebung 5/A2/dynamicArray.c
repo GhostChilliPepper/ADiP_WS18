@@ -58,7 +58,7 @@ void dyn_array_add(DynArray *array, int value) {
     if(array->size >= array->size_max) {
         DynArray tmpArray = newDynArray(array->size_max * 2);
         tmpArray.size = array->size;
-        memcpy(tmpArray.content, array->content, array->size);
+        memcpy(tmpArray.content, array->content, array->size_max * sizeof(int));
         free(array->content);
 
         *array = tmpArray;
