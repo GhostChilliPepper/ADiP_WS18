@@ -3,7 +3,9 @@
  * Program: matrixmult.c                   *
  * Autohor: lasse                          *
  * Date: 12/11/18                          *
- * Purpose:                                *
+ * Purpose: Multipiziert zwei Matrizen     *
+ * Hinweis: Bei gcc muss "-lm" ans Ende    *
+ *          gehangen werden.               *
  * * * * * * * * * * * * * * * * * * * * * */
 
 #include <stdio.h>
