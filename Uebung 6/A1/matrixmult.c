@@ -24,13 +24,16 @@ int main() {
         int matrixC[I][L];
         int sizeCZ = sizeof(matrixC) / sizeof(matrixC[0]);
         int sizeCS = sizeof(matrixC[0]) / sizeof(matrixC[0][0]);
+        int sum;
 
         /* Multiply */
-        for(int k = 0; k < K; k++){
+        for(int i = 0; i < I; i++) {
             for(int l = 0; l < L; l++) {
-                for (int i = 0; i < I; i++) {
-                    matrixC[i][l] = matrixA[i][k] * matrixB[k][l];    //Not working
+                for (int k = 0; k < K; k++) {
+                    sum += matrixA[i][k] * matrixB[k][l];
                 }
+                matrixC[i][l] = sum;
+                sum = 0;
             }
         }
 
