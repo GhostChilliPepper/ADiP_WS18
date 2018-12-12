@@ -11,8 +11,6 @@ double integrate(double (*fnct)(double), double left, double right,double stepsi
     double integral;
     integral = 0;
     for (hilfsvariable = left; hilfsvariable < right; hilfsvariable += stepsize) {
-        // Da nur approximiert wird, können wir das letzte
-        // Teilstück auch ignorieren
         integral += stepsize * (*fnct)(hilfsvariable);
     }
     return integral;
