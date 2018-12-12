@@ -15,7 +15,7 @@ double integrate(double (*fnct)(double), double left, double right,double stepsi
     }
     return integral;
 }
-int main() {
+int main(int argc, char**argv) {
     printf("Integral von Sinus [0, pi]: %f\n",integrate(&sin, 0, M_PI, 0.0001)); // 2
     printf("Integral von Sinus [0, 2pi]: %f\n",integrate(&sin, 0, 2 * M_PI, 0.0001)); // 0
     printf("Integral von f(x)=0.4x^5+x^3 [0, 3]: %f\n",integrate(&f, 0, 3, 0.0001)); // ca. 68,84
