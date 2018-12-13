@@ -13,6 +13,7 @@ typedef struct {
     char nachname[30];
     float note;
 } student;
+
 int main() {
     int Anzahl;
     float sum;
@@ -42,13 +43,16 @@ int main() {
         }
         sum+= Array[i].note;
     }
+
     printf("Dies sind die besten Studenten!\n");
     for (int j = 0; j < Anzahl; ++j) {
         if (Array[j].note == Minimum){
             printf("%s\n", Array[j].nachname);
         }
     }
+
     sum=sum/Anzahl;
     printf("Die Durchschnittsnote aller Studenten ist: %f !\n", sum);
+    free(Array);
     return 0;
 }
