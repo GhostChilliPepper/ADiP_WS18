@@ -1,10 +1,10 @@
-/* * * * * * * * * * * * * * * * * * * * * *
- * Project: ADiP_WS18
- * Program: students.c
- * Autohor: lasse
- * Date: 12/12/18
- * Purpose:
- * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * *
+ * Project: ADiP_WS18                        *
+ * Program: students.c                       *
+ * Autohor: lasse                            *
+ * Date: 12/12/18                            *
+ * Purpose: Notenschnitt + Studis sortieren  *
+ * * * * * * * * * * * * * * * * * * * * * * */
 
 #include <stdio.h>
 #include <stdlib.h>
