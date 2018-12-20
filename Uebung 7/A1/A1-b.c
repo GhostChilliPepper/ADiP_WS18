@@ -18,6 +18,7 @@ void printList(DoubleNode *head);
 void insertFirst(DoubleNode** head_ref, double new_data);
 void insertLast(DoubleNode** head_ref, double new_data);
 double get(DoubleNode *head,int index);
+/*double delete(DoubleNode *head,int index);*/
 
 int main(){
     DoubleNode* output = NULL;
@@ -43,6 +44,20 @@ double get(DoubleNode *head, int index) {
         return -1;
     }
 }
+/*
+double delete(DoubleNode *head, int index) {
+
+    int counter = 1;
+    while(head != NULL && counter < index) {
+        counter++;
+        head = head->next;
+    }
+    if(counter == index) {
+        return head->data;
+    } else {
+        return -1;
+    }
+}*/
 
 void insertFirst(DoubleNode** head_ref, double new_data) {
     DoubleNode* new_node = (DoubleNode*) malloc(sizeof(struct DoubleNode));
