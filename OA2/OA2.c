@@ -60,6 +60,6 @@ head=insertLast (head,7);
 head=insertFirst(head,9);
 printList(head);
 getFirst(head);
-printList(head);
+printList(head);        //test
 return 0;
 }
